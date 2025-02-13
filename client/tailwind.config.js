@@ -1,15 +1,14 @@
-import { defineConfig } from "tailwindcss";
 import tailwindcssAnimate from "tailwindcss-animate";
 
-export default defineConfig({
+/** @type {import('tailwindcss').Config} */
+export default {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{js,jsx}',
-    './components/**/*.{js,jsx}',
-    './app/**/*.{js,jsx}',
-    './src/**/*.{js,jsx}',
+    "./pages/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}",
+    "./app/**/*.{js,jsx}",
+    "./src/**/*.{js,jsx}",
   ],
-  prefix: "",
   theme: {
     container: {
       center: true,
@@ -76,4 +75,4 @@ export default defineConfig({
     },
   },
   plugins: [tailwindcssAnimate],
-});
+};
