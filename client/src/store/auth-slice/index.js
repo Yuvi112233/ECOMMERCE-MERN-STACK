@@ -13,7 +13,7 @@ export const registerUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      "/api/auth/register",
+      `${import.meta.env.VITE_API_URL}/api/auth/register`,
       formData,
       {
         withCredentials: true,
@@ -45,7 +45,7 @@ export const logoutUser = createAsyncThunk(
 
   async () => {
     const response = await axios.post(
-      "/api/auth/logout",
+      `${import.meta.env.VITE_API_URL}/api/auth/logout`,
       {},
       {
         withCredentials: true,
