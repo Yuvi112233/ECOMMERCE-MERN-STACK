@@ -12,7 +12,7 @@ function AdminHeader({ setOpen }) {
     // dispatch(logoutUser());
     dispatch(resetTokenAndCredentials());
         sessionStorage.clear()
-        navigate("/auth/login")
+        navigate(`${import.meta.env.VITE_API_URL}/auth/login`)
   }
 
   return (
