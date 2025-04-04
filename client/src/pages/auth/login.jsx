@@ -39,10 +39,10 @@ function AuthLogin() {
         <h1 className="text-3xl font-bold tracking-tight text-foreground">
           Sign in to your account
         </h1>
-        <p className="mt-2">
-          Don't have an account
+        <p className="mt-2 text-gray-500">
+          Don't have an account ?
           <Link
-            className="font-medium ml-2 text-primary hover:underline"
+            className="font-medium ml-2 text-primary text-blue-500 hover:underline"
             to="/auth/register"
           >
             Register

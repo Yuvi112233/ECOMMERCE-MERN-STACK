@@ -43,10 +43,10 @@ function AuthRegister() {
         <h1 className="text-3xl font-bold tracking-tight text-foreground">
           Create new account
         </h1>
-        <p className="mt-2">
-          Already have an account
+        <p className="mt-2  text-gray-500">
+          Already have an account ?
           <Link
-            className="font-medium ml-2 text-primary hover:underline"
+            className="font-medium ml-2 text-primary hover:underline  text-blue-500"
             to="/auth/login"
           >
             Login
